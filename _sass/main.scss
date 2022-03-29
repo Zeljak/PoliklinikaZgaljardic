@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./_utilities";
+
+@import "../node_modules/bulma/bulma";
+
+//GENERAL
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $family-primary;
+}
+.ilustracija {
+  position: absolute;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+
+  @include for-phone {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @include for-tablet {
+    text-align: center;
+    padding: 20px;
+  }
+
+  @include for-desktop {
+    padding-left: 126px;
+  }
+
+  @include for-widescreen {
+    padding-left: 126px;
+  }
+
+  @include for-fullhd {
+    padding-left: 138px;
+  }
+
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    @include for-phone {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 2.4px;
+      margin-bottom: 20px;
+    }
+
+    @include for-tablet {
+      font-size: 22px;
+      line-height: 50px;
+      letter-spacing: 3.3px;
+    }
+
+    @include for-desktop {
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: 3.3px;
+    }
+
+    @include for-widescreen {
+      font-size: 40px;
+      line-height: 80px;
+      letter-spacing: 6px;
+    }
+
+    @include for-fullhd {
+      font-size: 45px;
+      line-height: 1.78;
+      letter-spacing: 6.75px;
+
+      padding: 27px 0;
+    }
+  }
+
+  h2,
+  h3 {
+    font-weight: bold;
+    @include for-phone {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2.1px;
+    }
+
+    @include for-tablet {
+      font-size: 18px;
+      line-height: 35px;
+      letter-spacing: 2.7px;
+    }
+
+    @include for-desktop {
+      font-size: 25px;
+      line-height: 80px;
+      letter-spacing: 3.75;
+    }
+
+    @include for-widescreen {
+      font-size: 25px;
+      line-height: 80px;
+      letter-spacing: 3.75;
+    }
+
+    @include for-fullhd {
+      font-size: 30px;
+      line-height: 80px;
+      letter-spacing: 4.5px;
+    }
+  }
+
+  h3 {
+    @include for-phone {
+    }
+
+    @include for-tablet {
+    }
+
+    @include for-desktop {
+    }
+
+    @include for-widescreen {
+      padding-bottom: 60px;
+    }
+
+    @include for-fullhd {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.content {
+  h3 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+
+    @include for-phone {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 2.4px;
+    }
+
+    @include for-tablet {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 3.3px;
+    }
+
+    @include for-desktop {
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: 3.3px;
+    }
+
+    @include for-widescreen {
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 6px;
+    }
+
+    @include for-fullhd {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 6px;
+    }
+  }
+
+  p {
+    font-family: $family-secondary;
+    color: $brownish-grey;
+    text-align: left;
+
+    @include for-phone {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 2.1px;
+      color: black;
+    }
+
+    @include for-tablet {
+      font-size: 14px;
+    }
+
+    @include for-desktop {
+      font-size: 16px;
+    }
+
+    @include for-widescreen {
+      font-size: 16px;
+    }
+
+    @include for-fullhd {
+      font-size: 20px;
+    }
+  }
+}
+
+//FOOTER
+.footer {
+  background-color: $white;
+}
