@@ -102,19 +102,19 @@
 
     @include for-desktop {
       font-size: 25px;
-      line-height: 80px;
-      letter-spacing: 3.75;
+      line-height: 50px;
+      letter-spacing: 3.75px;
     }
 
     @include for-widescreen {
       font-size: 25px;
-      line-height: 80px;
-      letter-spacing: 3.75;
+      line-height: 50px;
+      letter-spacing: 3.75px;
     }
 
     @include for-fullhd {
       font-size: 30px;
-      line-height: 80px;
+      line-height: 60px;
       letter-spacing: 4.5px;
     }
   }

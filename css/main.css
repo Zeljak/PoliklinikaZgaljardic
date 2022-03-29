@@ -11563,23 +11563,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .header h2,
 .header h3 {
     font-size: 25px;
-    line-height: 80px;
-    letter-spacing: 3.75;
+    line-height: 50px;
+    letter-spacing: 3.75px;
   }
 }
 @media (min-width: 1216px) {
   .header h2,
 .header h3 {
     font-size: 25px;
-    line-height: 80px;
-    letter-spacing: 3.75;
+    line-height: 50px;
+    letter-spacing: 3.75px;
   }
 }
 @media (min-width: 1408px) {
   .header h2,
 .header h3 {
     font-size: 30px;
-    line-height: 80px;
+    line-height: 60px;
     letter-spacing: 4.5px;
   }
 }
