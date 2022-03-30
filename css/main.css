@@ -11459,14 +11459,26 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 main {
-  background: url(../_assets/images/ilustracija.png) no-repeat left center;
-  background-size: auto 100%;
-  overflow: hidden;
+  position: relative;
+}
+
+.ilustracija {
+  position: absolute;
+  left: 10px;
+  top: -10%;
+  height: 110%;
+  width: auto;
+}
+@media (min-width: 767px) and (max-width: 1025px) {
+  .ilustracija {
+    top: -5%;
+  }
 }
 @media (max-width: 767px) {
-  main {
-    background: url(../_assets/images/ilustracija.png) no-repeat left top;
-    background-size: auto 50%;
+  .ilustracija {
+    height: auto;
+    width: 65%;
+    top: 20px;
   }
 }
 

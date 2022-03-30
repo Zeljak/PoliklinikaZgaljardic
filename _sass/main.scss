@@ -14,14 +14,36 @@
   font-family: $family-primary;
 }
 
+// main {
+//   background: url(../_assets/images/ilustracija.png) no-repeat left center;
+//   background-size: auto 100%;
+//   overflow: hidden;
+
+//   @include for-phone {
+//     background: url(../_assets/images/ilustracija.png) no-repeat left top;
+//     background-size: auto 50%;
+//   }
+// }
+
 main {
-  background: url(../_assets/images/ilustracija.png) no-repeat left center;
-  background-size: auto 100%;
-  overflow: hidden;
+  position: relative;
+}
+
+.ilustracija {
+  position: absolute;
+  left: 10px;
+  top: -10%;
+  height: 110%;
+  width: auto;
+
+  @include for-tablet {
+    top: -5%;
+  }
 
   @include for-phone {
-    background: url(../_assets/images/ilustracija.png) no-repeat left top;
-    background-size: auto 50%;
+    height: auto;
+    width: 65%;
+    top: 20px;
   }
 }
 
