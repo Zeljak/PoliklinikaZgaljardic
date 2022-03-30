@@ -11602,6 +11602,13 @@ main {
 
 @media (max-width: 767px) {
   .content {
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 0 14px 0 10px;
+  }
+}
+@media (max-width: 767px) and (max-width: 359px) {
+  .content {
     max-width: 360px;
     margin: 0 auto;
     padding: 0 30px 0 10px;

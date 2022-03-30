@@ -147,12 +147,15 @@ main {
 
 .content {
   @include for-phone {
-    max-width: 360px;
+    max-width: 270px;
     margin: 0 auto;
-    padding: 0 30px 0 10px;
-    // max-width: 270px;
-    // margin: 0 auto;
-    // padding: 0 14px 0 10px;
+    padding: 0 14px 0 10px;
+
+    @include for-small-phone {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 0 30px 0 10px;
+    }
   }
   h3 {
     background-color: black;
