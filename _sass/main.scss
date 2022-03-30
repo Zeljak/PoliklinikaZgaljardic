@@ -13,10 +13,16 @@
   box-sizing: border-box;
   font-family: $family-primary;
 }
-.ilustracija {
-  position: absolute;
-  width: 50%;
-  margin-top: 20px;
+
+main {
+  background: url(../_assets/images/ilustracija.png) no-repeat left center;
+  background-size: auto 100%;
+  overflow: hidden;
+
+  @include for-phone {
+    background: url(../_assets/images/ilustracija.png) no-repeat left top;
+    background-size: auto 50%;
+  }
 }
 
 .header {
@@ -140,6 +146,11 @@
 }
 
 .content {
+  @include for-phone {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 30px 0 10px;
+  }
   h3 {
     background-color: black;
     color: white;
@@ -152,24 +163,29 @@
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 2.4px;
+      width: 165px;
+      font-weight: normal;
     }
 
     @include for-tablet {
       font-size: 22px;
       line-height: 30px;
       letter-spacing: 3.3px;
+      width: 224px;
     }
 
     @include for-desktop {
       font-size: 22px;
       line-height: 40px;
       letter-spacing: 3.3px;
+      width: 224px;
     }
 
     @include for-widescreen {
       font-size: 40px;
       line-height: 50px;
       letter-spacing: 6px;
+      width: 395px;
     }
 
     @include for-fullhd {
@@ -189,6 +205,113 @@
       line-height: 18px;
       letter-spacing: 2.1px;
       color: black;
+      width: 165px;
+    }
+
+    @include for-tablet {
+      font-size: 14px;
+      width: 224px;
+    }
+
+    @include for-desktop {
+      font-size: 16px;
+      width: 224px;
+    }
+
+    @include for-widescreen {
+      font-size: 16px;
+      width: 395px;
+    }
+
+    @include for-fullhd {
+      font-size: 20px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". nos"
+      "kapak ."
+      ". grudi"
+      "lice ."
+      ". liposukcija"
+      "tijelo .";
+
+    @include for-phone {
+      grid-template-columns: 150px 150px;
+      grid-template-rows: auto auto auto auto auto auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      row-gap: 35px;
+    }
+
+    @include for-tablet {
+      width: 500px;
+      margin-top: 110px;
+      padding-left: 154px;
+      margin-bottom: 100px;
+    }
+
+    @include for-desktop {
+      width: 600px;
+      margin-top: 184px;
+      padding-left: 100px;
+      margin-bottom: 50px;
+    }
+
+    @include for-widescreen {
+      width: 700px;
+      padding-left: 80px;
+      margin-bottom: 100px;
+    }
+
+    @include for-fullhd {
+      width: 900px;
+      padding-left: 100px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &--nos {
+    grid-area: nos;
+  }
+  &--kapak {
+    grid-area: kapak;
+  }
+  &--grudi {
+    grid-area: grudi;
+  }
+  &--lice {
+    grid-area: lice;
+  }
+  &--liposukcija {
+    grid-area: liposukcija;
+  }
+  &--tijelo {
+    grid-area: tijelo;
+  }
+}
+
+//FOOTER
+
+.footer {
+  background-color: #363636;
+
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding: 1rem 1.5rem 1rem;
+
+  h4 {
+    margin-bottom: 20px;
+    @include for-phone {
+      font-size: 12px;
+      margin-bottom: 10px;
     }
 
     @include for-tablet {
@@ -196,20 +319,45 @@
     }
 
     @include for-desktop {
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 40px;
     }
 
     @include for-widescreen {
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 40px;
     }
 
     @include for-fullhd {
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+
+    @include for-ultrahd {
+      font-size: 18px;
+      line-height: 40px;
     }
   }
-}
 
-//FOOTER
-.footer {
-  background-color: $white;
+  &__logo {
+    margin-right: 20px;
+
+    @include for-phone {
+      margin-right: 0;
+    }
+  }
+
+  img {
+    @include for-phone {
+      width: 15%;
+    }
+
+    @include for-tablet {
+      width: 15%;
+    }
+
+    @include for-desktop {
+      width: 15%;
+    }
+  }
 }
